@@ -1,0 +1,291 @@
+body{
+
+    font-family: 'Times New Roman', Times, serif;
+    margin:0.5rem ;
+    background-color: rgb(12, 12, 12);
+    color: aliceblue;
+    overflow:auto; 
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    margin: 0.5rem;
+    background: #080808;
+}
+
+.sidebar{
+    background-color: #262525;
+    width: 300px;
+    border-radius: 1rem;
+    position:static;
+    overflow: hidden;
+    
+     
+    
+}
+
+.main_content{
+    background-color: #262525;
+    width: 695px;
+    height: auto;
+    flex:1;
+    border-radius: 1rem;
+    overflow: auto;
+    border: 4px solid black;
+}
+
+
+.music-player{
+    background-color: #262525;
+    border-radius: 0.5rem;
+    position: fixed;
+    bottom: 0;
+    width:100% ;
+    height: 5rem;
+    flex: auto;
+
+}
+  
+
+
+
+.nav{
+    background-color: #262525;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    
+
+}
+a{
+    color: aliceblue;
+}
+.nav-option{
+      line-height: 2.5rem;
+     opacity: 0.7;
+     padding: 0.5rem 0.75rem;
+}
+
+.nav-option:hover{
+
+   opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.5rem;
+}
+
+.nav-option a{
+
+    font-size : 1.1rem;
+    margin-left: 1 rem;
+}
+.library{
+    background:  #262525;
+    border-radius: 0.5rem;
+    margin-top: 0.55rem;
+    height: 100vh;
+    padding: 0.65rem 0.80rem;
+    
+    overflow: hidden;
+
+}
+
+.option{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ .library-option img{
+    height:1.25rem;
+    width: 1.25rem; 
+ }
+
+ .icons{
+    font-size: 1.25rem;
+    opacity: 0.6;
+    margin-right: 0.5rem;
+    display: flex;
+ }
+ .icons i{
+     margin-right: 1rem;
+ }
+
+ .icons:hover{
+    font-size: 1.5rem;
+    opacity: 1;
+
+ }
+ .boxes{
+     background-color:  #262525;
+     height: 8rem;
+     border-radius: 0.8rem;
+     margin: 0.5rem 0 0.5rem 0;
+     padding: 0.75rem 0.5rem;
+     
+    
+       
+ }
+  
+ .state-1{
+   font-size: 1.25rem;
+   font-weight: 500;
+   margin: 0.1rem 0.1rem 0.5rem ;
+   padding: 0.25rem;
+    
+ }
+
+ .state-2{
+    font-size: 1rem;
+    margin: 0.1rem 0.1rem 0.5rem ;
+    padding: 0.25rem;
+    opacity: 0.75;
+
+ }
+ button{
+     background-color: #fff;
+     font-weight: 700;
+     border: none;
+     border-radius: 100px;
+     padding: 0.25rem  1rem ;
+     margin-top: .75rem;
+ }
+
+ .boxes1{
+    background-color: #262525;
+    height: 9rem;
+    border-radius: 0.8rem;
+    margin: 0.7rem 0 0.5rem ;
+    padding: 0.75rem 0.5rem;
+    
+   
+      
+}
+ 
+.states-1{
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0.1rem 0.1rem 0.5rem ;
+  padding: 0.25rem;
+   
+}
+
+.states-2{
+   font-size: 1rem;
+   margin: 0.1rem 0.1rem 0.5rem ;
+   padding: 0.25rem;
+   opacity: 0.75;
+
+}
+button{
+    background-color: #fff;
+    font-weight: 700;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem  1rem ;
+    margin-top: .65rem;
+    color: aliceblue;
+}
+
+button
+.btn.main{
+
+    height: 20px;
+    width: 30px;
+}
+
+.badge{
+
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.sticky-nav{
+     
+    position: sticky;
+    top:0;
+    padding: 1rem  0 1rem 0;
+    background-color:  #262525;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 10;
+    
+}
+.sticky-nav-icon{
+    display: flex;
+    gap: 8px;  
+    height: 30px;
+    width:45px;
+}
+
+.backward_icon{
+    background-color: #020202;
+    border-radius: 13px;
+
+}
+.forward_icon{
+    background-color: #000000;
+    border-radius: 13px;
+}
+
+ @media (max-width:1000px) {
+    .hide{
+
+        display: none;
+    }
+ }
+
+.card{
+
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card-image{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.card-title{
+
+    font-weight: 600;
+}
+
+.card-info{
+
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+.footer{
+   
+    height: 250px;
+
+}
+
+ 
